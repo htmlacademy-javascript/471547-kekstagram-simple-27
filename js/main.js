@@ -6,24 +6,10 @@ function randomInteger(min, max) {
     return Math.floor(rand);
 }
 
-alert(randomInteger(1, 10));
+console.log(randomInteger(1, 10));
 
-//learn.javascript.ru — здесь инфо нашла.
 
-//Проверка длины строки
-
-let str = prompt('Введите строку');
-let maxlegth = +prompt('Укажите максимальную длину строки')
-if (str == undefined || str == '') {
-    alert('Строка не введена');
-} else {
-    truncate();
+function checkStringLength(currentStr, maxLength) {
+    return (currentStr.length <= maxLength) ? true : false;
 }
-
-function truncate() {
-    if (str.length >= maxlegth) {
-        return alert(str.slice(0, maxlegth - 1) + '...');
-    } else {
-        return alert(str);
-    }
-}
+console.log(checkStringLength('Проверочный текст', 3));
