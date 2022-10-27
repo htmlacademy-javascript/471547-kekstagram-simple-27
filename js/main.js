@@ -5,11 +5,10 @@ function randomInteger(min, max) {
     let rand = min + Math.random() * (max + 1 - min);
     return Math.floor(rand);
 }
-
-console.log(randomInteger(1, 10));
+(randomInteger(1, 10));
 
 
 function checkStringLength(currentStr, maxLength) {
-    return (currentStr.length <= maxLength) ? true : false;
+    return (currentStr.length <= maxLength);
 }
-console.log(checkStringLength('Проверочный текст', 3));
+(checkStringLength('Проверочный текст', 33));
